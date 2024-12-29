@@ -49,7 +49,10 @@ public class UserTest {
 	@Test(priority=3)
 	void testUpdateUser
 	{
-		Response response = 
+		UserPayLoad.setFristName(f.name().firstName());
+		UserPayLoad.setLastName(f.name().lastName());
+		UserPayLoad.setEmail(f.internet().emailAddress());
+		Response response = UserEndPoint.UpdateUser(xxxxxxxx,UserPayLoad)
 	}
 
 }
