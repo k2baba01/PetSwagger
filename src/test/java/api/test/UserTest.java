@@ -46,5 +46,10 @@ public class UserTest {
 		response.then().log().all();
 		//Assert.assertEquals(response.getStatusCode(), 200);
 	}
+	@Test(priority=3)
+	void testUpdateUser
+	{
+		Response response = 
+	}
 
 }
